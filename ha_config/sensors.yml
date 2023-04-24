@@ -1,0 +1,75 @@
+# Depends on MQTT sensor
+
+- platform: integration
+  source: sensor.inverter0_ac_output_active_power
+  name: "Axioma 2kW: AC Output Active Energy"
+  unique_id: inverter0_ac_output_active_energy
+  unit_prefix: k
+  unit_time: h
+  round: 3
+  method: left
+# Depends on MQTT sensor
+- platform: integration
+  source: sensor.inverter0_pv_input_power
+  name: "Axioma 2kW: PV Input Energy"
+  unique_id: inverter0_pv_input_energy
+  unit_prefix: k
+  round: 3
+  method: left
+# Depends on MQTT sensor
+
+- platform: integration
+  source: sensor.inverter1_ac_output_active_power
+  name: "King 5kW: AC Output Active Energy"
+  unique_id: inverter1_ac_output_active_energy
+  unit_prefix: k
+  round: 3
+  method: left
+# Depends on MQTT sensor
+- platform: integration
+  source: sensor.inverter1_pv_input_power
+  name: "King 5kW: PV Input Energy"
+  unique_id: inverter1_pv_input_energy
+  unit_prefix: k
+  round: 3
+  method: left
+# Depends on MQTT sensor
+
+- platform: integration
+  source: sensor.battery1_180ah_output_power
+  name: "JK BMS 180Ah: Output Energy"
+  unique_id: battery1_180ah_output_power
+  unit_prefix: k
+  round: 3
+  method: left
+# Depends on MQTT sensor
+- platform: integration
+  source: sensor.battery1_180ah_input_power
+  name: "JK BMS 180Ah: Input Energy"
+  unique_id: battery1_180ah_input_power
+  unit_prefix: k
+  round: 3
+  method: left
+
+- platform: integration
+  source: sensor.inverter1_battery_output_power
+  name: "King 5kW Battery: Output Energy"
+  unique_id: inverter1_battery_output_power
+  unit_prefix: k
+  round: 3
+  method: left
+# Depends on MQTT sensor
+- platform: integration
+  source: sensor.inverter1_battery_input_power
+  name: "King 5kW Battery: Input Energy"
+  unique_id: inverter1_battery_input_power
+  unit_prefix: k
+  round: 3
+  method: left
+- platform: integration
+  source: sensor.inverter1_grid_input_power
+  name: "King 5kW: Grid Input  Active Energy"
+  unique_id: inverter1_grid_input_energy
+  unit_prefix: k
+  round: 3
+  method: left
