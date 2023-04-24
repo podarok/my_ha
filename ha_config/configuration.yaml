@@ -1,0 +1,2 @@
+mqtt: !include mqtt.yml
+sensor: !include sensors.yml
