@@ -1,0 +1,92 @@
+sensor:
+  - state_topic: solar/lutsk/axioma/status/ac_output_active_power/value
+    name: "Axioma 2kW:AC Output Active Power"
+    object_id: inverter0_ac_output_active_power
+    unique_id: inverter0_ac_output_active_power
+    unit_of_measurement: W
+    icon: mdi:lightning-bolt
+    device_class: power
+  - state_topic: solar/lutsk/axioma/status/pv_input_power/value
+    name: "Axioma 2kW:PV Input Power"
+    object_id: inverter0_pv_input_power
+    unique_id: inverter0_pv_input_power
+    unit_of_measurement: W
+    icon: mdi:sun-wireless
+    device_class: power
+  - state_topic: solar/lutsk/axioma/status/battery_capacity/value
+    name: "Axioma 2kW:Battery Capacity"
+    object_id: inverter0_battery_capacity
+    unique_id: inverter0_battery_capacity
+    unit_of_measurement: '%'
+    icon: mdi:battery-high
+    device_class: battery
+  - state_topic: solar/lutsk/axioma/status/pv_input_voltage/value
+    name: "Axioma 2kW:PV Input Voltage"
+    object_id: inverter0_pv_input_voltage
+    unique_id: inverter0_pv_input_voltage
+    unit_of_measurement: 'V'
+    icon: mdi:flash-triangle-outline
+    device_class: voltage
+  - state_topic: solar/lutsk/king/status/l1_ac_output_active_power/value
+    name: "King 5kW:AC Output Active Power"
+    object_id: inverter1_ac_output_active_power
+    unique_id: inverter1_ac_output_active_power
+    unit_of_measurement: W
+    icon: mdi:lightning-bolt
+    device_class: power
+  - state_topic: solar/lutsk/king/status/pv_input_power/value
+    name: "King 5kW:PV Input Power"
+    object_id: inverter1_pv_input_power
+    unique_id: inverter1_pv_input_power
+    unit_of_measurement: W
+    icon: mdi:sun-wireless
+    device_class: power
+  - state_topic: solar/lutsk/king/status/battery_capacity/value
+    name: "King 5kW:Battery Capacity"
+    object_id: inverter1_battery_capacity
+    unique_id: inverter1_battery_capacity
+    unit_of_measurement: '%'
+    icon: mdi:battery-high
+    device_class: battery
+  - state_topic: solar/lutsk/king/status/pv_input_voltage/value
+    name: "King 5kW:PV Input Voltage"
+    object_id: inverter1_pv_input_voltage
+    unique_id: inverter1_pv_input_voltage
+    unit_of_measurement: 'V'
+    icon: mdi:flash-triangle-outline
+    device_class: voltage
+  - state_topic: solar/lutsk/jkbms180/calculated/battery_input_power/value
+    name: "JK BMS 180Ah: Input Power"
+    object_id: battery1_180ah_input_power
+    unique_id: battery1_180ah_input_power
+    unit_of_measurement: W
+    icon: mdi:battery-high
+    device_class: power
+  - state_topic: solar/lutsk/jkbms180/calculated/battery_output_power/value
+    name: "JK BMS 180Ah: Output Power"
+    object_id: battery1_180ah_output_power
+    unique_id: battery1_180ah_output_power
+    unit_of_measurement: W
+    icon: mdi:battery-low
+    device_class: power
+  - state_topic: solar/lutsk/king/calculated/battery_input_power/value
+    name: "King 5kW Battery: Input Power"
+    object_id: inverter1_battery_input_power
+    unique_id: inverter1_battery_input_power
+    unit_of_measurement: W
+    icon: mdi:battery-high
+    device_class: power
+  - state_topic: solar/lutsk/king/calculated/battery_output_power/value
+    name: "King 5kW Battery: Output Power"
+    object_id: inverter1_battery_output_power
+    unique_id: inverter1_battery_output_power
+    unit_of_measurement: W
+    icon: mdi:battery-low
+    device_class: power
+  - state_topic: solar/lutsk/king/calculated/inverter1_grid_input_power/value
+    name: "King 5kW: Grid Input Power"
+    object_id: inverter1_grid_input_power
+    unique_id: inverter1_grid_input_power
+    unit_of_measurement: W
+    icon: mdi:battery-high
+    device_class: power
